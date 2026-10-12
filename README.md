@@ -9,8 +9,8 @@
 Computer scientist who builds AI products and keeps them running.
 
 I co-founded **Oralito**, a paid-subscription AI SaaS, where I built the
-speech-analysis engine and the LangChain + Chroma RAG pipeline that serve real
-users. At Brasília International School I build internal systems in FastAPI with
+speech-analysis engine and put the LangChain + Chroma RAG pipeline into
+production for real users. At Brasília International School I build internal systems in FastAPI with
 Microsoft Entra ID sign-in and connect platforms that didn't talk to each other.
 
 My rule is to define how I'll measure before I run anything — every project below
@@ -22,6 +22,7 @@ states its protocol and its limitations in the README.
 | --- | --- |
 | [**job-fit-agents**](https://github.com/Novachrono117/multi-agent-system) | LangGraph supervisor routing two specialist agents over four strictly typed tools, with tool use, a step ceiling, a network allowlist and job postings treated as hostile input. 287 tests run in CI with no API key and no network. |
 | [**Construction Safety Vision**](https://github.com/Novachrono117/Construction-Safety-Vision-PPE-Detection-Instance-Segmentation-Video-Analytics) | YOLO11 detector and instance segmenter fine-tuned from public pretrained weights to tell worn PPE from loose PPE. 65-image holdout frozen before training and read once: box mAP@0.50:0.95 0.427, mask 0.410. |
+| [**RiscoMap Integrado**](https://github.com/Novachrono117/riscomap-integrado) | Academic proof of concept (postgraduate, in Portuguese): public disaster-risk maps from two Brazilian agencies, in three projections, integrated into one canonical PostGIS model with per-record provenance and a 29-code quality catalog. Invalid source geometries are flagged, never repaired; a pre-registered completeness indicator is always reported in both readings (100% in scope, 5.59% over the whole base). Read-only FastAPI and a MapLibre WebGIS. |
 | [**Telecom Churn ML System**](https://github.com/Novachrono117/telecom-churn-ml-system) | Production-oriented ML: three model families compared, the two strongest tuned with nested cross-validation, a frozen fingerprinted model behind an integrity-gated API, and label-free drift monitoring. ROC-AUC 0.842 on a single holdout read. |
 | [**Voz DF**](https://github.com/Novachrono117/SugestaoGDF) | Academic urban-reporting platform (not an official government service) whose local LLM was chosen by measurement: qwen3.5:4b reached 93.8% accuracy on 48 labelled cases, against 58.3% for rules. Next.js, TypeScript, Prisma, WCAG 2.1 AA. |
 | [**Oralito — case study**](https://github.com/Novachrono117/oralito-case-study) | The AI SaaS in production. The source code is private; the case study covers the product and my role. |
@@ -32,7 +33,7 @@ states its protocol and its limitations in the README.
 - **Machine learning and vision** · PyTorch · Ultralytics YOLO11 · CUDA · scikit-learn · pycocotools
 - **Backend** · Python · FastAPI · Pydantic · SQLAlchemy · Alembic · REST APIs · WebSockets · OAuth and OIDC
 - **Frontend** · React · JavaScript · TypeScript · Next.js · PWA
-- **Data** · PostgreSQL · MongoDB · Redis · vector databases
+- **Data** · PostgreSQL · PostGIS · Redis · vector databases
 - **Infrastructure and identity** · Docker · Linux · Nginx · Caddy · GitHub Actions · pytest · Playwright · Microsoft Entra ID · Microsoft Graph · Google Workspace
 
 ## Education
